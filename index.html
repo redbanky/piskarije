@@ -1,86 +1,91 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Piskarije | Translation & Interpreting</title>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Open Sans', sans-serif;
-      background: #f5f9fc;
-      color: #333;
-      line-height: 1.6;
-    }
-    header {
-      background: #e0f2f1;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to right, #a8c0a8, #6f8f6f);
+      color: white;
+      text-align: center;
       padding: 2rem;
-      text-align: center;
+      position: relative;
     }
-    header img {
-      max-width: 120px;
-      height: auto;
+    body::before {
+      content: "";
+      background: url('Piskarije logo_bckg.png') no-repeat center center;
+      background-size: contain;
+      opacity: 0.1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
     }
-    section {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 0 1rem;
+    .content {
+      position: relative;
+      z-index: 1;
     }
-    footer {
-      text-align: center;
+    .profile-pic {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      border: 4px solid white;
+    }
+    h1 {
+      font-size: 2rem;
+      margin: 0.5rem 0;
+    }
+    .subtitle {
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+    .section {
+      background: rgba(0, 0, 0, 0.4);
+      margin: 1rem auto;
       padding: 1rem;
-      background: #b2dfdb;
-      color: #333;
-      font-size: 0.9rem;
-    }
-    h1, h2 {
-      margin-top: 0.5rem;
+      max-width: 600px;
+      border-radius: 8px;
+      border: 1px solid white;
     }
     .contact {
-      background: #d0f0f6;
-      padding: 1rem;
-      border-left: 4px solid #4db6ac;
+      font-size: 1.2rem;
+      margin-top: 1rem;
     }
     a {
-      color: #00796b;
+      color: #ffffff;
       text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <header>
-    <img src="Piskarije logo_bckg.png" alt="Piskarije Logo">
+  <div class="content">
+    <img src="dfbdt.jpg" alt="Nina Pisk" class="profile-pic">
     <h1>Piskarije</h1>
-    <p>Professional Translation & Interpreting Services</p>
-  </header>
+    <div class="subtitle">Translator // Conference Interpreter // Court Interpreter</div>
 
-  <section>
-    <h2>About</h2>
-    <p>
-      [Placeholder text] Piskarije is a small, dedicated language service provider
-      offering accurate and culturally aware translation and interpreting for individuals and businesses.
-    </p>
-  </section>
+    <div class="section">
+      <h2>About</h2>
+      <p>I’m a professional translator, certified court interpreter, and experienced conference interpreter dedicated to delivering precise, culturally sensitive communication across languages. With a strong background in legal, technical, and business fields, I help clients bridge language gaps with accuracy and confidence. Whether you need reliable document translation, courtroom interpretation, or seamless multilingual communication at conferences, I’m here to ensure your message is heard and understood.</p>
+    </div>
 
-  <section>
-    <h2>References</h2>
-    <p>
-      [Placeholder for testimonials or client feedback. You can add quotes or logos from past clients here.]
-    </p>
-  </section>
+    <div class="section">
+      <h2>References</h2>
+      <p>I’ve had the privilege of working with diverse clients, including IYUNO, TVT, Deloitte, Zagreb Film Festival, Atelier Hrzic, Sesnic&Turkovic Design Studio, Znanje, Propeller Film, Curry Bowl, Raystar, The Archaeological Museum in Split, Zoo, Mediatranslations, and many others.</p>
+    </div>
 
-  <section class="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:nina@piskarije.eu">nina@piskarije.eu</a></p>
-    <p>Phone: [Add your number here]</p>
-  </section>
-
-  <footer>
-    &copy; 2025 Piskarije. All rights reserved.
-  </footer>
+    <div class="section contact">
+      <p><a href="mailto:nina@piskarije.eu">nina@piskarije.eu</a></p>
+      <p>+385(0)91 574 1644</p>
+    </div>
+  </div>
 </body>
 </html>
